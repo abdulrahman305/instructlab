@@ -37,8 +37,8 @@ torch>=2.2.2a0,<2.4.0 ; python_version == '3.10'
 torch>=2.3.0,<2.4.0 ; python_version >= '3.11'
 tqdm>=4.66.2
 # 'optimum' for Intel Gaudi needs transformers <4.41.0,>=4.40.0
-transformers>=4.40.0 ; python_version == '3.10'
-transformers>=4.41.2 ; python_version >= '3.11'
+transformers>=4.48.0 ; python_version == '3.10'
+transformers>=4.48.0 ; python_version >= '3.11'
 trl>=0.9.4
 wandb>=0.16.4
 # the below library should NOT be imported into any python files
