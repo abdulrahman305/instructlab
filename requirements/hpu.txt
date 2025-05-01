@@ -15,3 +15,4 @@ habana_gpu_migration>=1.16.2
 #habana-pyhlml
 #habana_quantization_toolkit
 #habana-torch-dataloader
+transformers>=4.50.0 # not directly required, pinned by Snyk to avoid a vulnerability
