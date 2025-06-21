@@ -45,3 +45,5 @@ wandb>=0.16.4
 # it is for CLI usage ONLY
 yamllint>=1.35.1
 referencing>=0.35.0
+protobuf>=4.25.8 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
