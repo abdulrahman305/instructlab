@@ -4,7 +4,7 @@ pull_request_rules:
     automatic merge for main with >= 2 approved reviews,
     all requested reviews have given feedback, not held, and CI is successful
   conditions:
-    - "#approved-reviews-by>=2"
+    - "#approved-reviews-by>=1"
     - "#review-requested=0"
     - "#changes-requested-reviews-by=0"
     - or:
@@ -241,22 +241,6 @@ pull_request_rules:
     label:
       remove:
         - ci-failure
-
-- name: Apply 'one-approval' label if one of the maintainer approved the PR
-  conditions:
-      - "#approved-reviews-by=1"
-  actions:
-    label:
-      add:
-        - one-approval
-
-- name: Remove 'one-approval' label if the approval was reset
-  conditions:
-      - "#approved-reviews-by!=1"
-  actions:
-    label:
-      remove:
-        - one-approval
 
 - name: label-dependencies
   description: Automatically apply dependencies label
