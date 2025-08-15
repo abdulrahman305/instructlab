@@ -42,3 +42,4 @@ haystack-ai>=2.8
 docling-core[chunking]>=2.10.0
 docling>=2.18.0
 sentence-transformers>=3.0.0
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
